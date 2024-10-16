@@ -1,0 +1,14 @@
+{
+  "name": "fetch-tasks",
+  "version": "1.0.0",
+  "description": "Fetch two third-party APIs every 2 minutes",
+  "main": "task1.js",
+  "scripts": {
+    "start": "pm2 start task1.js --watch && pm2 start task2.js --watch"
+  },
+  "dependencies": {
+    "axios": "^0.21.1",
+    "node-cron": "^2.0.3",
+    "pm2": "^5.1.0"
+  }
+}
